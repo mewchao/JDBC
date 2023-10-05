@@ -72,6 +72,17 @@ public class jdbcdemo {
 }
 ```
 >DriverManger<br>
- `//DriverManger.registerDriver(new com.mysql.jdbc.Driver())`<br>
+ `DriverManger.registerDriver(new com.mysql.jdbc.Driver())`<br>
 >URL<br>
->statement
+>statement<br>
+    `statement.excute()
+    statement.excuteQuery()
+    statement.excuteUpdate()`
+>Resultset结果集<br>  
+	`resultset.getObject();//不是知道类型的情况`
+遍历方法：<br>   
+	`resultSet.beforeFirst();//移动到最前面
+    resultSet.afterLast();//移动到最后面
+    resultSet.previous();//移动到最后面
+    resultSet.next();//移动下一个
+    resultSet.absloute(row);//移动到指定行`
